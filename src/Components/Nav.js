@@ -27,12 +27,14 @@ const Nav = (props) => {
     }
 
     return <>
-        <div className='w-full bg-black text-white py-3 px-5 fixed flex justify-between top-0'>
-            <h1 className='text-3xl'>Forecast</h1>
+        <div className='w-full bg-black text-white py-3 px-5 fixed sm:flex sm:justify-between top-0 space-y-3'>
+            <h1 className='text-3xl sm:text-left text-center'>Forecast</h1>
             {/* /////////////////// Search Bar /////////////////////// */}
-            <div className='flex'>
-                <button className='bg-gray-800 rounded-lg px-4' onClick={()=>{ checking();setCoordinate("")} }><GpsFixedIcon/>  Current Location</button>
-                <div className='ml-8 bg-gray-800 p-2 rounded-md'>
+            <div className='flex sm:justify-normal justify-around'>
+                <button className='bg-gray-800 rounded-lg px-4' onClick={()=>{ checking();setCoordinate("")} }><GpsFixedIcon/> <span className='hidden sm:inline'>
+                Current Location
+                </span></button>
+                <div className='sm:ml-8 bg-gray-800 p-2 rounded-md'>
                     <input className="bg-gray-800 outline-none" type="text" placeholder='Search for location' onChange={(e) => { return setSearch(e.target.value) }}
                         value={search}
                     />
