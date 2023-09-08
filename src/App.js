@@ -6,7 +6,7 @@ const App = () => {
   const [city, setCity] = useState('q=mumbai');
   const apiKey = '95db6887f454510c5e2ffa451b921906'
    const resCity = (cityName)=>{
-    if(cityName!== ''){
+    if(cityName!== 'q='){
         setCity(cityName);
     }
   }
