@@ -28,7 +28,7 @@ const Nav = (props) => {
 
     return <>
         <div className='w-full bg-black text-white py-3 px-5 fixed sm:flex sm:justify-between top-0 space-y-3'>
-            <h1 className='text-3xl sm:text-left text-center'>Forecast</h1>
+            <h1 className='text-3xl sm:text-left text-center'>WeatheNow</h1>
             {/* /////////////////// Search Bar /////////////////////// */}
             <div className='flex sm:justify-normal justify-around'>
                 <button className='bg-gray-800 rounded-lg px-4' onClick={()=>{ checking();setCoordinate("")} }><GpsFixedIcon/> <span className='hidden sm:inline'>
